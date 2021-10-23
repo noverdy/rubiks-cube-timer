@@ -1,0 +1,32 @@
+:root {
+    --web-bg: #001d3d;
+    --hold-bg: #00264e;
+    --run-bg: #000814;
+    --highlight: #ffc300;
+    --warning: #ff4646;
+    --text: #ffffff;
+}
+
+.web-bg {   
+    background-color: var(--web-bg);
+    color: var(--text);
+}
+
+.hold-bg {
+    background-color: var(--hold-bg);
+    color: var(--text);
+}
+
+.run-bg {
+    background-color: var(--run-bg);
+    color: var(--text);
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+
+.warning {
+    color: var(--warning);
+}

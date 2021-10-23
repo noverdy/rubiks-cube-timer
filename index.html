@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fira Code font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/32d261c1ed.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+    <title>Rubik's Cube Timer</title>
+</head>
+<body class="web-bg">
+    <div class="viewport">
+        <div class="scramble-wrapper" id="scramble-wrapper">
+            <div class="scramble" id="scramble">
+                <!-- Scramble Data -->
+            </div>
+            <i class="icon-btn fas fa-random noselect" id="shuffle" title="Shuffle"></i>
+            <a class="icon-btn fab fa-github" href="https://github.com/noverdy/rubiks-cube-timer" target="_blank" title="GitHub"></a>
+        </div>
+        <div class="time-wrapper">
+            <div class="stopwatch noselect" id="stopwatch">
+                00:00.00
+            </div>
+            <div class="record" id="record">
+                PB: 29 | Ao5: 35
+            </div>
+        </div>
+        <div class="hint noselect" id="hint">
+            Hold Space to get ready
+        </div>
+    </div>
+
+    <div class="history" id="history-sidebar">
+        <div class="title">History</div>
+        <div class="history-data" id="history-data">
+            <!-- History Data -->
+        </div>
+        <div class="history-menu">
+            <div class="icon-btn history-btn" id="history-btn">
+                <i class="fas fa-history"></i>
+            </div>
+            <div class="data">
+                <input type="button" class="btn" value="Export To CSV" id="export">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
